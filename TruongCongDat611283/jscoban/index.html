@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+    
+</head>
+<body>
+    <div>
+        <input type="text" name="" id="numbinput">
+        <button type="button" onclick="fun()">submit</button>
+        <p id="test"></p>
+    </div>
+    <script>
+        function fun(){
+            var text;
+            var x;
+            x=document.getElementById("numbinput").value;
+            if(isNaN(x)||x<1||x>10){
+                text = "Dữ liệu không hợp lệ";
+            }
+            else{
+                text = "Dữ liệu hợp lệ";
+            }
+            document.getElementById("test").innerHTML= text;
+        }
+    </script>
+</body>
+</html>
