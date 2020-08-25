@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form id="frm1" action="">
+        Nhập A: <input id="ip1" type="number" name="a">
+        Nhập B: <input id="ip2" type="number" name="b">
+        tổng : <input type="number" id="ip3">
+    </form>
+    <button onclick ="ham()">btnAdd</button>
+    <p id="txt">0</p>
+</body>
+<script >
+    function ham(){
+        // alert("hello");
+        var a =document.forms["frm1"]["a"].value;
+        var b =document.forms["frm1"]["b"].value;
+        var tong = Number(a) + Number(b);
+        alert("Tổng là "+tong);
+        document.forms["frm1"]["t"].value = tong;
+        document.getElementsByName("t").innerHTML = tong;
+    }
+</script>
+</html>
